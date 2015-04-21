@@ -1,0 +1,32 @@
+package kama;
+
+import java.awt.Image;
+import java.awt.Rectangle;
+
+import javax.swing.ImageIcon;
+
+public class Maga {
+
+	int x;
+	int y;
+	int v;
+	
+	Image img=new ImageIcon("res/412018.jpg").getImage();
+	
+	Mountatin mount;
+	
+	public Rectangle getRect(){
+		return new Rectangle(x, y, 150, 120);
+	}
+	
+	public Maga(int x, int y, int v, Mountatin mount){
+		this.x = x;
+		this.y = y;
+		this.v = v;
+		this.mount = mount;
+	}
+	
+	public void move(){
+		x = x - mount.p.v + v;
+	}
+}
