@@ -75,7 +75,7 @@ public class Mountatin extends JPanel implements ActionListener, Runnable {
 		while(i.hasNext()){
 			Maga m=i.next();
 			if(p.getRect().intersects(m.getRect())){
-				JOptionPane.showMessageDialog(null, "Бей в челяк чтобы не схлопотать ежжи!!");
+				JOptionPane.showMessageDialog(null, "Ты проиграл!!");
 				System.exit(1);
 			}
 		}
